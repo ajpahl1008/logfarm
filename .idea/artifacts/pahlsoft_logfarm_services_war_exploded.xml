@@ -1,0 +1,28 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="pahlsoft-logfarm-services:war exploded">
+    <output-path>$PROJECT_DIR$/target/pahlsoft-logfarm-services</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="pahlsoft-logfarm-services/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="pahlsoft-logfarm-services" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: junit:junit:3.8.1" />
+          <element id="library" level="project" name="Maven: org.testng:testng:6.1.1" />
+          <element id="library" level="project" name="Maven: org.beanshell:bsh:2.0b4" />
+          <element id="library" level="project" name="Maven: com.beust:jcommander:1.12" />
+          <element id="library" level="project" name="Maven: org.yaml:snakeyaml:1.6" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.27" />
+          <element id="library" level="project" name="Maven: javax:javaee-api:7.0" />
+          <element id="library" level="project" name="Maven: com.sun.mail:javax.mail:1.5.0" />
+          <element id="library" level="project" name="Maven: javax.activation:activation:1.1" />
+          <element id="library" level="project" name="Maven: org.apache.derby:derbyclient:10.10.1.1" />
+          <element id="library" level="project" name="Maven: org.apache.derby:derbytools:10.10.1.1" />
+          <element id="library" level="project" name="Maven: org.apache.derby:derby:10.10.1.1" />
+          <element id="library" level="project" name="Maven: org.apache.derby:derbynet:10.10.1.1" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

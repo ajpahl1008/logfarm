@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="3247531131">
+    <data-source source="LOCAL" name="MySQL - logfarm@localhost" uuid="52cc191f-7ebd-4401-a572-aaf576a1b9fa">
+      <driver-ref>mysql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/logfarm</jdbc-url>
+      <user-name>logfarm</user-name>
+      <user-password>dfdedf9adfcfdfc4dfcbdf9bdfc6dfd9</user-password>
+      <driver-properties>
+        <property name="zeroDateTimeBehavior" value="convertToNull" />
+        <property name="tinyInt1isBit" value="false" />
+      </driver-properties>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="LogfarmPersistenceUnit" uuid="e7f0d37e-ccd5-4abc-8508-61f669662828">
+      <driver-ref>mysql</driver-ref>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/logfarm</jdbc-url>
+      <user-name>logfarm</user-name>
+      <user-password>dfdedf9adfcfdfc4dfcbdf9bdfc6dfd9</user-password>
+      <libraries>
+        <library>
+          <url>file://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.27/mysql-connector-java-5.1.27.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+  </component>
+</project>
+

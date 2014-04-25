@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="pahlsoft-logfarm-services:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="pahlsoft-logfarm-services.war">
+      <element id="artifact" artifact-name="pahlsoft-logfarm-services:war exploded" />
+    </root>
+  </artifact>
+</component>

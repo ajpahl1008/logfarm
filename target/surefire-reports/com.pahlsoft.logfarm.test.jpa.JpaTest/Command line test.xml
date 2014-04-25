@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="AJMACBOOK" name="com.pahlsoft.logfarm.test.jpa.JpaTest" tests="3" failures="0" timestamp="25 Apr 2014 00:50:42 GMT" time="2.203" errors="0">
+  <testcase name="@BeforeClass init" time="0.0" classname="com.pahlsoft.logfarm.test.jpa.JpaTest">
+    <failure type="org.apache.openjpa.persistence.ArgumentException" message="localized message key: access-duplicate; substitutions: [private com.pahlsoft.logfarm.enums.RetentionTypes com.pahlsoft.logfarm.entity.ConfEntity.defaultRetentionDays, public com.pahlsoft.logfarm.enums.RetentionTypes com.pahlsoft.logfarm.entity.ConfEntity.getDefaultRetentionDays()]">
+      <![CDATA[<openjpa-2.2.2-r422266:1468616 nonfatal user error> org.apache.openjpa.persistence.ArgumentException: localized message key: access-duplicate; substitutions: [private com.pahlsoft.logfarm.enums.RetentionTypes com.pahlsoft.logfarm.entity.ConfEntity.defaultRetentionDays, public com.pahlsoft.logfarm.enums.RetentionTypes com.pahlsoft.logfarm.entity.ConfEntity.getDefaultRetentionDays()]
+	at org.apache.openjpa.meta.AbstractMetaDataDefaults.populateFromPCRegistry(AbstractMetaDataDefaults.java:200)
+	at org.apache.openjpa.meta.AbstractMetaDataDefaults.populate(AbstractMetaDataDefaults.java:165)
+	at org.apache.openjpa.persistence.PersistenceMetaDataDefaults.populate(PersistenceMetaDataDefaults.java:279)
+	at org.apache.openjpa.meta.MetaDataRepository.addMetaData(MetaDataRepository.java:920)
+	at org.apache.openjpa.meta.MetaDataRepository.addMetaData(MetaDataRepository.java:905)
+	at org.apache.openjpa.persistence.AnnotationPersistenceMetaDataParser.getMetaData(AnnotationPersistenceMetaDataParser.java:752)
+	at org.apache.openjpa.persistence.AnnotationPersistenceMetaDataParser.parseClassAnnotations(AnnotationPersistenceMetaDataParser.java:545)
+	at org.apache.openjpa.persistence.AnnotationPersistenceMetaDataParser.parse(AnnotationPersistenceMetaDataParser.java:415)
+	at org.apache.openjpa.persistence.PersistenceMetaDataFactory.load(PersistenceMetaDataFactory.java:260)
+	at org.apache.openjpa.meta.MetaDataRepository.getMetaDataInternal(MetaDataRepository.java:586)
+	at org.apache.openjpa.meta.MetaDataRepository.getMetaDataInternal(MetaDataRepository.java:396)
+	at org.apache.openjpa.meta.MetaDataRepository.getMetaData(MetaDataRepository.java:388)
+	at org.apache.openjpa.jdbc.meta.MappingRepository.getMapping(MappingRepository.java:354)
+	at org.apache.openjpa.jdbc.meta.MappingTool.getMapping(MappingTool.java:682)
+	at org.apache.openjpa.jdbc.meta.MappingTool.buildSchema(MappingTool.java:754)
+	at org.apache.openjpa.jdbc.meta.MappingTool.run(MappingTool.java:652)
+	at org.apache.openjpa.jdbc.kernel.JDBCBrokerFactory.synchronizeMappings(JDBCBrokerFactory.java:154)
+	at org.apache.openjpa.jdbc.kernel.JDBCBrokerFactory.synchronizeMappings(JDBCBrokerFactory.java:164)
+	at org.apache.openjpa.jdbc.kernel.JDBCBrokerFactory.newBrokerImpl(JDBCBrokerFactory.java:122)
+	at org.apache.openjpa.kernel.AbstractBrokerFactory.newBroker(AbstractBrokerFactory.java:209)
+	at org.apache.openjpa.kernel.DelegatingBrokerFactory.newBroker(DelegatingBrokerFactory.java:156)
+	at org.apache.openjpa.persistence.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:227)
+	at org.apache.openjpa.persistence.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:154)
+	at org.apache.openjpa.persistence.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:60)
+	at com.pahlsoft.logfarm.test.jpa.JpaTest.init(JpaTest.java:25)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:110)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.IllegalStateException: localized message key: access-duplicate; substitutions: [private com.pahlsoft.logfarm.enums.RetentionTypes com.pahlsoft.logfarm.entity.ConfEntity.defaultRetentionDays, public com.pahlsoft.logfarm.enums.RetentionTypes com.pahlsoft.logfarm.entity.ConfEntity.getDefaultRetentionDays()]
+	at org.apache.openjpa.persistence.PersistenceMetaDataDefaults.getMemberByProperty(PersistenceMetaDataDefaults.java:692)
+	at org.apache.openjpa.meta.AbstractMetaDataDefaults.populateFromPCRegistry(AbstractMetaDataDefaults.java:186)
+	... 58 more
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="insertConfigurationItem" time="0.0" classname="com.pahlsoft.logfarm.test.jpa.JpaTest">
+    <skipped/>
+  </testcase>
+  <testcase name="selectConfigurationItem" time="0.0" classname="com.pahlsoft.logfarm.test.jpa.JpaTest">
+    <skipped/>
+  </testcase>
+  <testcase name="deleteConfigurationItem" time="0.0" classname="com.pahlsoft.logfarm.test.jpa.JpaTest">
+    <skipped/>
+  </testcase>
+</testsuite>
