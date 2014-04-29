@@ -6,7 +6,7 @@ public enum RetentionTypes {
     WEEK,
     MONTH,
     YEAR,
-    SEVEN_YEARS;
+    SEVEN_YEARS
 
 
 }

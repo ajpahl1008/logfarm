@@ -1,6 +1,6 @@
 ----------------------------------------------------------------
-Mon Apr 28 20:24:26 EDT 2014:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.1.1 - (1458268): instance a816c00e-0145-aade-4bad-000007e32a50 
+Mon Apr 28 21:06:22 EDT 2014:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.1.1 - (1458268): instance a816c00e-0145-ab04-af44-000007e0e520 
 on database directory memory:C:\Users\aj\Desktop\GitHub\logfarm\megaevent with class loader sun.misc.Launcher$AppClassLoader@4617c264 
 Loaded from file:/C:/Users/aj/.m2/repository/org/apache/derby/derby/10.10.1.1/derby-10.10.1.1.jar
 java.vendor=Oracle Corporation

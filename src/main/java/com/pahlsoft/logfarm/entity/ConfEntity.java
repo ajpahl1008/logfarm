@@ -1,22 +1,23 @@
 package com.pahlsoft.logfarm.entity;
 
+import com.pahlsoft.logfarm.enums.DestinationTypes;
+import com.pahlsoft.logfarm.enums.FormatTypes;
+import com.pahlsoft.logfarm.enums.RetentionTypes;
+
 import javax.persistence.*;
 import java.util.Arrays;
 
-/**
- * Created by aj on 4/28/2014.
- */
 @Entity
 @Table(name = "conf", schema = "", catalog = "logfarm")
 public class ConfEntity {
     private int confId;
     private int refreshRate;
     private String destination;
-    private String destinationType;
+    private DestinationTypes destinationType;
     private String sourceDir;
     private int compression;
-    private String format;
-    private String defaultRetentionDays;
+    private FormatTypes format;
+    private RetentionTypes defaultRetentionDays;
     private String timeDateStampFmt;
     private String s3Url;
     private byte[] s3Key;
@@ -57,12 +58,13 @@ public class ConfEntity {
     }
 
     @Basic
+    @Enumerated(EnumType.STRING)
     @Column(name = "DESTINATION_TYPE", nullable = false, insertable = true, updatable = true, length = 45)
-    public String getDestinationType() {
+    public DestinationTypes getDestinationType() {
         return destinationType;
     }
 
-    public void setDestinationType(String destinationType) {
+    public void setDestinationType(DestinationTypes destinationType) {
         this.destinationType = destinationType;
     }
 
@@ -87,22 +89,20 @@ public class ConfEntity {
     }
 
     @Basic
+    @Enumerated(EnumType.STRING)
     @Column(name = "FORMAT", nullable = false, insertable = true, updatable = true, length = 45)
-    public String getFormat() {
-        return format;
-    }
+    public FormatTypes getFormat() { return format;}
 
-    public void setFormat(String format) {
-        this.format = format;
-    }
+    public void setFormat(FormatTypes format) { this.format = format;}
 
     @Basic
+    @Enumerated(EnumType.STRING)
     @Column(name = "DEFAULT_RETENTION_DAYS", nullable = false, insertable = true, updatable = true, length = 45)
-    public String getDefaultRetentionDays() {
+    public RetentionTypes getDefaultRetentionDays() {
         return defaultRetentionDays;
     }
 
-    public void setDefaultRetentionDays(String defaultRetentionDays) {
+    public void setDefaultRetentionDays(RetentionTypes defaultRetentionDays) {
         this.defaultRetentionDays = defaultRetentionDays;
     }
 

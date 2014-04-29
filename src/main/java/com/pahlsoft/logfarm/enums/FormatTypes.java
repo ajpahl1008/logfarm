@@ -7,5 +7,5 @@ public enum FormatTypes {
     TAR,
     TAR_GZIP,
     TAR_ZIP,
-    BZIP;
+    BZIP
 }
