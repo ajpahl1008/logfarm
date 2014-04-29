@@ -1,6 +1,5 @@
 package com.pahlsoft.logfarm.test.jpa;
 import com.pahlsoft.logfarm.entity.ConfEntity;
-import com.pahlsoft.logfarm.enums.DestinationTypes;
 import com.pahlsoft.logfarm.enums.FormatTypes;
 import com.pahlsoft.logfarm.enums.RetentionTypes;
 import org.testng.Assert;
@@ -33,10 +32,10 @@ public class JpaTest {
         configurationEntity.setRefreshRate(60);
         configurationEntity.setDestination("");
 
-        configurationEntity.setDestinationType(DestinationTypes.ATMOS);
+        configurationEntity.setDestinationType("ATMOS");
         configurationEntity.setSourceDir("/test/oldLogFile");
-        configurationEntity.setFormat(FormatTypes.BZIP);
-        configurationEntity.setDefaultRetentionDays(RetentionTypes.SEVEN_YEARS);
+        configurationEntity.setFormat("ZIP");
+        configurationEntity.setDefaultRetentionDays("SEVEN_YEARS");
         configurationEntity.setTimeDateStampFmt("");
         configurationEntity.setS3Url("http://s3.amazon.com/xyz");
         configurationEntity.setS3Key(new byte[2048]);

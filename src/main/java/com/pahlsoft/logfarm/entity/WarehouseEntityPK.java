@@ -5,7 +5,7 @@ import javax.persistence.Id;
 import java.io.Serializable;
 
 /**
- * Created by aj on 4/6/14.
+ * Created by aj on 4/28/2014.
  */
 public class WarehouseEntityPK implements Serializable {
     private int transactionId;

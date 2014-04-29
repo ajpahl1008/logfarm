@@ -1,28 +1,22 @@
 package com.pahlsoft.logfarm.entity;
 
-import com.pahlsoft.logfarm.enums.DestinationTypes;
-import com.pahlsoft.logfarm.enums.FormatTypes;
-import com.pahlsoft.logfarm.enums.RetentionTypes;
-
 import javax.persistence.*;
-import java.lang.annotation.Retention;
 import java.util.Arrays;
 
+/**
+ * Created by aj on 4/28/2014.
+ */
 @Entity
-@Access(AccessType.FIELD)
 @Table(name = "conf", schema = "", catalog = "logfarm")
 public class ConfEntity {
     private int confId;
     private int refreshRate;
     private String destination;
-    @Enumerated(EnumType.STRING)
-    private DestinationTypes destinationType;
+    private String destinationType;
     private String sourceDir;
     private int compression;
-    @Enumerated(EnumType.STRING)
-    private FormatTypes format;
-    @Enumerated(EnumType.STRING)
-    private RetentionTypes defaultRetentionDays;
+    private String format;
+    private String defaultRetentionDays;
     private String timeDateStampFmt;
     private String s3Url;
     private byte[] s3Key;
@@ -64,11 +58,11 @@ public class ConfEntity {
 
     @Basic
     @Column(name = "DESTINATION_TYPE", nullable = false, insertable = true, updatable = true, length = 45)
-    public DestinationTypes getDestinationType() {
+    public String getDestinationType() {
         return destinationType;
     }
 
-    public void setDestinationType(DestinationTypes destinationType) {
+    public void setDestinationType(String destinationType) {
         this.destinationType = destinationType;
     }
 
@@ -94,21 +88,21 @@ public class ConfEntity {
 
     @Basic
     @Column(name = "FORMAT", nullable = false, insertable = true, updatable = true, length = 45)
-    public FormatTypes getFormat() {
+    public String getFormat() {
         return format;
     }
 
-    public void setFormat(FormatTypes format) {
+    public void setFormat(String format) {
         this.format = format;
     }
 
     @Basic
     @Column(name = "DEFAULT_RETENTION_DAYS", nullable = false, insertable = true, updatable = true, length = 45)
-    public RetentionTypes getDefaultRetentionDays() {
+    public String getDefaultRetentionDays() {
         return defaultRetentionDays;
     }
 
-    public void setDefaultRetentionDays(RetentionTypes defaultRetentionDays) {
+    public void setDefaultRetentionDays(String defaultRetentionDays) {
         this.defaultRetentionDays = defaultRetentionDays;
     }
 

@@ -1,13 +1,13 @@
 ----------------------------------------------------------------
-Thu Apr 24 20:54:43 EDT 2014:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.1.1 - (1458268): instance a816c00e-0145-9660-97c6-000006ff8828 
-on database directory memory:/Users/aj/GitHub/logfarm/megaevent with class loader sun.misc.Launcher$AppClassLoader@63e68a2b 
-Loaded from file:/Users/aj/.m2/repository/org/apache/derby/derby/10.10.1.1/derby-10.10.1.1.jar
+Mon Apr 28 20:24:26 EDT 2014:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.1.1 - (1458268): instance a816c00e-0145-aade-4bad-000007e32a50 
+on database directory memory:C:\Users\aj\Desktop\GitHub\logfarm\megaevent with class loader sun.misc.Launcher$AppClassLoader@4617c264 
+Loaded from file:/C:/Users/aj/.m2/repository/org/apache/derby/derby/10.10.1.1/derby-10.10.1.1.jar
 java.vendor=Oracle Corporation
-java.runtime.version=1.7.0_60-ea-b15
-user.dir=/Users/aj/GitHub/logfarm
-os.name=Mac OS X
-os.arch=x86_64
-os.version=10.9.2
+java.runtime.version=1.8.0-b132
+user.dir=C:\Users\aj\Desktop\GitHub\logfarm
+os.name=Windows 7
+os.arch=amd64
+os.version=6.1
 derby.system.home=null
 Database Class Loader started - derby.database.classpath=''

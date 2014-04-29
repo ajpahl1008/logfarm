@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.sql.Date;
 
 /**
- * Created by aj on 4/6/14.
+ * Created by aj on 4/28/2014.
  */
 @Entity
 @Table(name = "warehouse", schema = "", catalog = "logfarm")

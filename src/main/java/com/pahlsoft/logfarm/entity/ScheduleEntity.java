@@ -3,7 +3,7 @@ package com.pahlsoft.logfarm.entity;
 import javax.persistence.*;
 
 /**
- * Created by aj on 4/6/14.
+ * Created by aj on 4/28/2014.
  */
 @Entity
 @Table(name = "schedule", schema = "", catalog = "logfarm")
