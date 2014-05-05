@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/pahlsoft-logfarm-services.iml" filepath="$PROJECT_DIR$/pahlsoft-logfarm-services.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pahlsoft-logfarm-parent.iml" filepath="$PROJECT_DIR$/pahlsoft-logfarm-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pahlsoft-logfarm-services/pahlsoft-logfarm-services.iml" filepath="$PROJECT_DIR$/pahlsoft-logfarm-services/pahlsoft-logfarm-services.iml" />
     </modules>
   </component>
 </project>

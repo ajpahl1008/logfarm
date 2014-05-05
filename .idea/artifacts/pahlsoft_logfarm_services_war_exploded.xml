@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="pahlsoft-logfarm-services:war exploded">
-    <output-path>$PROJECT_DIR$/target/pahlsoft-logfarm-services</output-path>
+    <output-path>$PROJECT_DIR$/pahlsoft-logfarm-services/target/pahlsoft-logfarm-services</output-path>
     <root id="root">
       <element id="javaee-facet-resources" facet="pahlsoft-logfarm-services/web/Web" />
       <element id="directory" name="WEB-INF">
