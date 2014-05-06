@@ -10,6 +10,7 @@
 
     <modules>
         <module>pahlsoft-logfarm-services</module>
+        <module>pahlsoft-logfarm-scheduler</module>
     </modules>
 
     
