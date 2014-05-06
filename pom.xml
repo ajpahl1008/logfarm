@@ -6,7 +6,7 @@
     <artifactId>pahlsoft-logfarm-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>logfarm application</name>
+    <name>Pahlsoft LogFarm Application</name>
 
     <modules>
         <module>pahlsoft-logfarm-services</module>
